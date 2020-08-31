@@ -1,13 +1,135 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html,
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+    'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #2e3440;
+  color: #eceff4;
+}
+
+a {
+  text-decoration: none;
+  color: #ebcb8b;
+}
+
+.border-outset {
+  border: 4px outset #eceff4;
+}
+
+.border-inset {
+  border: 4px inset #eceff4;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+.title {
+  text-align: center;
+  margin-top: 2.5em;
+}
+
+.title p {
+  font-size: 4em;
+  font-weight: 900;
+  color: #8fbcbb;
+}
+
+.title img {
+  width: 3em;
+}
+
+.instructions {
+  display: grid;
+  grid-gap: 0.5em;
+  justify-content: center;
+  text-align: center;
+  color: #b48ead;
+  margin: 2em 0;
+}
+
+.instructions p {
+  display: inline;
+  font-size: 2em;
+  margin: 0 1em;
+}
+
+.instructions span {
+  font-size: 1em;
+}
+
+.main {
+  display: grid;
+  justify-content: center;
+}
+
+.main-container {
+  padding: 1em;
+  background: #c2c2c2;
+}
+
+.control-and-display {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5em;
+}
+
+.control-and-display button {
+  width: 3em;
+  height: 3em;
+  outline: none;
+}
+
+.control-and-display button:active {
+  border: 4px inset #eceff4;
+}
+
+.number-display {
+  width: 80px;
+  height: 48px;
+  color: #ff0701;
+  background: #333;
+  text-align: center;
+  font-size: 40px;
+}
+
+.face {
+  font-size: 2em;
+}
+
+.minefield {
+  display: grid;
+  grid-template-columns: repeat(16, auto);
+  align-content: center;
+  justify-content: center;
+  margin-top: 1em;
+}
+
+.minefield button {
+  width: 2em;
+  height: 2em;
+  outline: none;
+  display: flex;
+  justify-content: center;
+}
+
+.minefield img {
+  width: 1.5em;
+  height: 1.5em;
+}
+
+.footer {
+  text-align: center;
+  padding: 2em;
 }
